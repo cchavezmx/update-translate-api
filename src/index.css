@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.contendor{
+  display: grid;
+  grid-template-columns: 200px 400px 400px;
+
+
+}
+
+.contendor > span {
+  border: 1px solid rgb(141, 141, 146);
+  font-size: medium;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.76rem;
+}
+
+.bg--tile{
+  background-color: white;
+  color: black;
+}
+
+.textArea > textarea {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.textArea > button {
+  padding: 1rem;
+  width: max-content;
+}
+
+.mb-3{
+  margin-bottom: 3rem;
+}
+
+.login > input {
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.login > button {
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
