@@ -18,7 +18,7 @@ const Login = () => {
     if(state.matches("success")){
       setIsLogin(true)
     }
-  })
+  },[state])
 
   return(
     <form className="mb-3">
