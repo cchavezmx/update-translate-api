@@ -69,9 +69,11 @@ const getData = async(ctx, event) => {
     .then(res => res.message)
     
   ).then(res => {
-    let inglesDesc  
     
-    res.map(item => {
+    const obla = res.map(item => {
+
+      let inglesDesc  
+
       if(typeof item.inglesDesc === 'undefined'){
           inglesDesc = "no hay descripción disponible"
 
@@ -79,10 +81,10 @@ const getData = async(ctx, event) => {
           inglesDesc = item.inglesDesc
         }
         
+        return inglesDesc
     })
     
-    return inglesDesc
-    
+    return obla
   })
 
   return response
