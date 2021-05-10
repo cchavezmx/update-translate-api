@@ -24,6 +24,12 @@
   color: white;
 }
 
+.container--data{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +42,110 @@
     transform: rotate(360deg);
   }
 }
+
+h3{
+  font-size: large;
+}
+
+
+.container--translate {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px double white;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 50vh;
+  height: 900px;
+    
+}
+
+.ingles{
+  
+  border-right: cornflowerblue solid 4px;
+  padding: 10px;
+  font-size: medium;
+  
+}
+
+.apaniol{
+  
+  border-right: 4px solid rgb(255, 0, 0);
+  padding: 10px;
+  font-size: medium;
+  
+}
+
+.bandera{
+  height: 20px;
+  width: auto;
+
+}
+
+.container--translate > div{
+  
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  margin: 10px;
+
+}
+
+.container--translate > div > label{
+  font-size: medium;
+}
+
+.container--translate > div > h1 {
+  font-size: x-large;
+}
+
+.container--translate > button {
+  padding: 1rem;
+  width: 50%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(0, 162, 255);
+  color: white;
+}
+
+.container--modulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container--modulo > label{
+  font-size: medium;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.container--modulo > input{
+  width: 100%;
+  height: 1rem;
+  font-size: medium;
+  padding: 10px;
+}
+
+.container--modulo > textarea{
+  width: 100%;
+  height: 5rem;
+  padding: 10px;
+  
+}
+
+.data-save{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  background: rgb(255, 90, 90);
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+}
+

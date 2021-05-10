@@ -5,7 +5,8 @@ const dataOfCatalogo = async(ctx, event) => {
 
   const { data, model } = event
   
-  const token = localStorage.getItem("traduceloToken")
+  console.log("[DATOS]", data, model)
+  // const token = localStorage.getItem("traduceloToken")
 
   const responseData = await Promise.resolve(
 
@@ -13,9 +14,9 @@ const dataOfCatalogo = async(ctx, event) => {
         method: "PATCH",
         headers:{
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
+          // 'Authorization': `Bearer ${token}`
         },
-        body: JSON.stringify({ inglesDesc: data })
+        body: JSON.stringify(data)
 
       })
       .then(res => res.json())
@@ -24,6 +25,8 @@ const dataOfCatalogo = async(ctx, event) => {
       })
   )
 
+  console.log("[responseData]", responseData, "[model]", model)
+  console.log("[responseData]", responseData)
   return responseData
 
 
@@ -96,7 +99,8 @@ const gitMachine = Machine({
   initial: "iddle",
   context: {
     data: {},
-    modelData: {}
+    modelData: {},
+    error: {}
   },
   states: {
     iddle: {},
